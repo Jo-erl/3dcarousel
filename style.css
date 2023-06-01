@@ -87,6 +87,7 @@ body {
   .container {
     width: 50px;
     margin: 0 auto;
+    overflow-x: hidden;
   }
   .carousel {
     width: 50px;
@@ -94,6 +95,7 @@ body {
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.3s ease-in-out;
+    overflow-x: hidden;
   }
   .carousel .image {
     width: 50px;
@@ -103,6 +105,8 @@ body {
     left: 0;
     transform: translateZ(-50%) translateY(-50%);
     transform-origin: center center;
+    overflow-x: hidden;
+
   }
   .carousel .image span {
     margin: auto;
