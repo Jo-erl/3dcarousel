@@ -1,115 +1,109 @@
 @font-face {
   font-family: "MTNBrighterSans";
-  src: url("ttf/MTNBrighterSans-Bold.ttf") format("truetype"), url("ttf/MTNBrighterSans-ExtraBold.ttf") format("truetype"), url("ttf/MTNBrighterSans-ExtraLight.ttf") format("truetype"), url("ttf/MTNBrighterSans-Light.ttf") format("truetype"), url("ttf/MTNBrighterSans-Medium.ttf") format("truetype"), url("ttf/MTNBrighterSans-Regular.ttf") format("truetype");
+  src: url("ttf/MTNBrighterSans-Bold.ttf") format("truetype"),
+    url("ttf/MTNBrighterSans-ExtraBold.ttf") format("truetype"),
+    url("ttf/MTNBrighterSans-ExtraLight.ttf") format("truetype"),
+    url("ttf/MTNBrighterSans-Light.ttf") format("truetype"),
+    url("ttf/MTNBrighterSans-Medium.ttf") format("truetype"),
+    url("ttf/MTNBrighterSans-Regular.ttf") format("truetype");
 }
+
 * {
   font-family: "MTNBrighterSans", sans-serif;
 }
 
+html,
 body {
-  margin: 0;
-  background: #090909;
+  overflow: hidden;
   text-align: center;
-  color: #fefefe;
+  color: bisque;
 }
 
-.container {
-  position: relative;
-  width: 200px;
-  margin: 200px auto 0 auto;
-  perspective: 1000px;
+h1,
+p {
+  text-align: center;
+  color: #3d3d3d;
 }
-.container .carousel {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  animation: rotate360 40s infinite forwards linear;
-}
-.container .carousel .image {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background-size: cover;
+
+.carousel-container {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  overflow: hidden;
 }
-.container .carousel .image span {
-  margin: auto;
-  font-size: 2rem;
+
+.carousel {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate360 20s infinite linear;
 }
+
 @keyframes rotate360 {
   from {
     transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(-360deg);
+    transform: rotateY(360deg);
   }
 }
-.container .carousel .image:nth-child(1) {
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image span {
+  display: block;
+}
+
+.image:nth-child(1) {
   background-image: url("imgs/1.webp");
-  transform: rotateY(0deg) translateZ(420px);
+  transform: rotateY(0deg) translateZ(280px);
 }
-.container .carousel .image:nth-child(2) {
+
+.image:nth-child(2) {
   background-image: url("imgs/2.webp");
-  transform: rotateY(40deg) translateZ(420px);
+  transform: rotateY(60deg) translateZ(280px);
 }
-.container .carousel .image:nth-child(3) {
+
+.image:nth-child(3) {
   background-image: url("imgs/3.webp");
-  transform: rotateY(80deg) translateZ(420px);
+  transform: rotateY(120deg) translateZ(280px);
 }
-.container .carousel .image:nth-child(4) {
+
+.image:nth-child(4) {
   background-image: url("imgs/4.webp");
-  transform: rotateY(120deg) translateZ(420px);
+  transform: rotateY(180deg) translateZ(280px);
 }
-.container .carousel .image:nth-child(5) {
+
+.image:nth-child(5) {
   background-image: url("imgs/5.webp");
-  transform: rotateY(160deg) translateZ(420px);
+  transform: rotateY(240deg) translateZ(280px);
 }
-.container .carousel .image:nth-child(6) {
+
+.image:nth-child(6) {
   background-image: url("imgs/6.webp");
-  transform: rotateY(200deg) translateZ(420px);
-}
-.container .carousel .image:nth-child(7) {
-  background-image: url("imgs/14.webp");
-  transform: rotateY(240deg) translateZ(420px);
-}
-.container .carousel .image:nth-child(8) {
-  background-image: url("imgs/15.webp");
-  transform: rotateY(280deg) translateZ(420px);
-}
-.container .carousel .image:nth-child(9) {
-  background-image: url("imgs/16.webp");
-  transform: rotateY(320deg) translateZ(420px);
+  transform: rotateY(300deg) translateZ(280px);
 }
 
-@media (max-width: 420px) {
-  .container {
-    width: 50px;
-    margin: 0 auto;
-    overflow-x: hidden;
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 60vh;
   }
+
   .carousel {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.3s ease-in-out;
-    overflow-x: hidden;
+    width: 280px;
+    height: 280px;
   }
-  .carousel .image {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateZ(-50%) translateY(-50%);
-    transform-origin: center center;
-    overflow-x: hidden;
-
-  }
-  .carousel .image span {
-    margin: auto;
-    font-size: 1.2rem;
-  }
-}/*# sourceMappingURL=style.css.map */
+}
