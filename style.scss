@@ -106,6 +106,8 @@ body {
   .container {
     width: 50px;
     margin: 0 auto;
+    overflow-x: hidden;
+
   }
 
   .carousel {
@@ -124,6 +126,8 @@ body {
       left: 0;
       transform: translateZ(-50%) translateY(-50%);
       transform-origin: center center;
+      overflow-x: hidden;
+
 
       span {
         margin: auto;
