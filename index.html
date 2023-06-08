@@ -15,7 +15,7 @@
 
 <body>
     <h1>3D Carousel</h1>
-    <p>Infinite carousel rotation by JoErl</p>
+    <p style="color: rgb(65, 65, 65);">Infinite carousel rotation by JoErl</p>
     <div class="carousel-container">
         <div class="carousel">
             <div class="image"><span>Image 1</span></div>
@@ -26,5 +26,17 @@
             <div class="image"><span>Image 6</span></div>
         </div>
     </div>
+
+    <footer>
+        <p>All Rights Reserved. &copy; <span id="currentYear"></span>. <a href="https://jo-erl.github.io/joelanangportfolio/" style="color: rgb(0, 255, 68);" target="_blank">JoErl</a>
+  
+        </p>
+      </footer>
+      
+      <script>
+        // JavaScript to automatically update the year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+      </script>
 </body>
+
 </html>
