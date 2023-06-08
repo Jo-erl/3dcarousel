@@ -1,5 +1,6 @@
 # 3D Carousel - Looping Rotation
-[Demo](https://jo-erl.github.io/3dcarousel/){:target="_blank"}
+<a href="https://jo-erl.github.io/3dcarousel/" title="3D Carousel" target="_blank">Demo Link</a>
+https://jo-erl.github.io/3dcarousel/
 
 The 3D Carousel is a dynamic and visually appealing component that allows you to showcase a collection of items in a rotating loop. This GitHub repository provides a ready-to-use solution for integrating the carousel into your web projects.
 
