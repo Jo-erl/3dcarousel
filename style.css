@@ -1,11 +1,6 @@
 @font-face {
   font-family: "MTNBrighterSans";
-  src: url("ttf/MTNBrighterSans-Bold.ttf") format("truetype"),
-    url("ttf/MTNBrighterSans-ExtraBold.ttf") format("truetype"),
-    url("ttf/MTNBrighterSans-ExtraLight.ttf") format("truetype"),
-    url("ttf/MTNBrighterSans-Light.ttf") format("truetype"),
-    url("ttf/MTNBrighterSans-Medium.ttf") format("truetype"),
-    url("ttf/MTNBrighterSans-Regular.ttf") format("truetype");
+  src: url("ttf/MTNBrighterSans-Regular.ttf") format("truetype");
 }
 
 * {
@@ -14,13 +9,13 @@
 
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   text-align: center;
   color: bisque;
 }
 
-h1,
-p {
+h1
+ {
   text-align: center;
   color: #3d3d3d;
 }
@@ -107,4 +102,27 @@ p {
     width: 280px;
     height: 280px;
   }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
 }
