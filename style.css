@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "MTNBrighterSans";
   src: url("ttf/MTNBrighterSans-Regular.ttf") format("truetype");
@@ -11,22 +12,32 @@ html,
 body {
   text-align: center;
   color: bisque;
-  overflow: auto; /* Enable vertical scrolling */
+  overflow-x: hidden;
 }
 
 h1 {
   text-align: center;
   color: #3d3d3d;
+  margin-bottom: 0; 
+}
+
+p {
+  text-align: center;
+  color: #3d3d3d;
+  margin-top: 0; 
 }
 
 .carousel-container {
   width: 100%;
-  height: 100vh;
+  height: 390px;
   display: flex;
   justify-content: center;
   align-items: center;
   perspective: 1000px;
   overflow: hidden;
+  padding: 10px !important;
+  overflow-x: hidden;
+
 }
 
 .carousel {
@@ -93,15 +104,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .carousel-container {
-    height: 100vh;
-    margin-top: 0;
-  }
-
-  h1 {
-  margin-bottom: 0;
-}
-
+ 
   .carousel {
     width: 280px;
     height: 280px;
