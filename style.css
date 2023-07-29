@@ -109,10 +109,12 @@ footer {
   left: 0;
   width: 100%;
   background-color: #1e1e1e;
-  color: #ffffff;
   padding: 5px;
   text-align: center;
   font-size: 14px;
+}
+footer p{
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 768px) {
