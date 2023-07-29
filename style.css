@@ -103,22 +103,22 @@ p {
   transform: rotateY(300deg) translateZ(280px);
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
 @media (max-width: 768px) {
  
   .carousel {
     width: 280px;
     height: 280px;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #1e1e1e;
-    color: #ffffff;
-    padding: 5px;
-    text-align: center;
-    font-size: 14px;
   }
 }
