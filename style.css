@@ -172,18 +172,19 @@ p {
 }
 
 
-footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
+/*=============== FOOTER2 ===============*/
+.footer2 {
   width: 100%;
-  background-color: #1e1e1e;
-  padding: 5px;
   text-align: center;
-  font-size: 14px;
+  padding: 10px 0; /* Adjust the padding as needed */
+  background-color: #0a0a0a;
+  position: absolute;
 }
-footer p{
-  color: rgb(255, 255, 255);
+
+.footer2 h4 {
+  margin: 0; /* This will remove both top and bottom margins */
+  font-weight: 600;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
