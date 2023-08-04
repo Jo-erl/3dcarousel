@@ -177,15 +177,18 @@ p {
   width: 100%;
   text-align: center;
   padding: 10px 0; /* Adjust the padding as needed */
-  background-color: #0a0a0a;
+  background-color: #000000;
   position: absolute;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  margin: 0; 
+  left: 0; 
+  right: 0; 
+}
+.footer2 p{
+  color: #aaaaaa;
 }
 
-.footer2 h4 {
-  margin: 0; /* This will remove both top and bottom margins */
-  font-weight: 600;
-  color: #fff;
-}
 
 @media (max-width: 768px) {
  
