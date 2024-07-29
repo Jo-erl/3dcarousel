@@ -1,37 +1,51 @@
-
+/*FONTS*/
 @font-face {
   font-family: "MTNBrighterSans";
   src: url("ttf/MTNBrighterSans-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular weight */
 }
+
+@font-face {
+  font-family: "MTNBrighterSans";
+  src: url("ttf/MTNBrighterSans-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium weight */
+}
+
+@font-face {
+  font-family: "MTNBrighterSans";
+  src: url("ttf/MTNBrighterSans-ExtraBold.ttf") format("truetype");
+  font-weight: 700; /* Extra weight */
+}
+/*--=======================================================*/
 
 * {
   font-family: "MTNBrighterSans", sans-serif;
   margin: 0;
   box-sizing: border-box;
 }
-
+/*--=======================================================*/
 html,
 body {
+  font-family: "MTNBrighterSans", sans-serif;
   text-align: center;
   color: bisque;
   overflow-x: hidden;
 }
-
+/*--=======================================================*/
 h1 {
   text-align: center;
   color: #3d3d3d;
-  margin-top: 30px; 
-  margin-bottom: 0; 
-  
+  margin-top: 30px;
+  margin-bottom: 0;
 }
-
+/*--=======================================================*/
 p {
   text-align: center;
   color: #3d3d3d;
-  margin-top: 0; 
-  margin-bottom: 10px; 
+  margin-top: 0;
+  margin-bottom: 10px;
 }
-
+/*--=======================================================*/
 .carousel-container {
   width: 100%;
   height: 410px;
@@ -42,9 +56,8 @@ p {
   overflow: hidden;
   padding: 10px !important;
   overflow-x: hidden;
-
 }
-
+/*--=======================================================*/
 .carousel {
   width: 280px;
   height: 280px;
@@ -61,7 +74,7 @@ p {
     transform: rotateY(360deg);
   }
 }
-
+/*--=======================================================*/
 .image {
   position: absolute;
   width: 100%;
@@ -73,43 +86,42 @@ p {
   align-items: center;
   transition: transform 0.5s ease-in-out;
 }
-
+/*--=======================================================*/
 .image span {
   display: block;
 }
-
+/*--=======================================================*/
 .image:nth-child(1) {
   background-image: url("imgs/1.webp");
   transform: rotateY(0deg) translateZ(280px);
 }
-
+/*--=======================================================*/
 .image:nth-child(2) {
   background-image: url("imgs/2.webp");
   transform: rotateY(60deg) translateZ(280px);
 }
-
+/*--=======================================================*/
 .image:nth-child(3) {
   background-image: url("imgs/3.webp");
   transform: rotateY(120deg) translateZ(280px);
 }
-
+/*--=======================================================*/
 .image:nth-child(4) {
   background-image: url("imgs/4.webp");
   transform: rotateY(180deg) translateZ(280px);
 }
-
+/*--=======================================================*/
 .image:nth-child(5) {
   background-image: url("imgs/5.webp");
   transform: rotateY(240deg) translateZ(280px);
 }
-
+/*--=======================================================*/
 .image:nth-child(6) {
   background-image: url("imgs/6.webp");
   transform: rotateY(300deg) translateZ(280px);
 }
-
-/***************************************/
-.image-2{
+/*--=======================================================*/
+.image-2 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -120,48 +132,46 @@ p {
   align-items: center;
   transition: transform 0.5s ease-in-out;
 }
-
-
+/*--=======================================================*/
 .image-2 span {
   display: block;
 }
-
+/*--=======================================================*/
 .image-2:nth-child(1) {
   background-image: url("imgs/7.webp");
   transform: rotateY(0deg) translateZ(280px);
 }
-
+/*--=======================================================*/
 .image-2:nth-child(2) {
   background-image: url("imgs/8.webp");
   transform: rotateY(60deg) translateZ(280px);
 }
-
+/*--=======================================================*/
 .image-2:nth-child(3) {
   background-image: url("imgs/9.webp");
   transform: rotateY(120deg) translateZ(280px);
 }
-
+/*--=======================================================*/
 .image-2:nth-child(4) {
   background-image: url("imgs/10.webp");
   transform: rotateY(180deg) translateZ(280px);
 }
-
+/*--=======================================================*/
 .image-2:nth-child(5) {
   background-image: url("imgs/11.webp");
   transform: rotateY(240deg) translateZ(280px);
 }
-
+/*--=======================================================*/
 .image-2:nth-child(6) {
   background-image: url("imgs/12.webp");
   transform: rotateY(300deg) translateZ(280px);
 }
-
-.section2{
+/*--=======================================================*/
+.section2 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
-
+/*--=======================================================*/
 .hr {
   width: 60%;
   margin: 0 auto;
@@ -170,30 +180,74 @@ p {
   border: none;
   margin-top: 50px;
 }
-
-
-/*=============== FOOTER2 ===============*/
-.footer2 {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0; /* Adjust the padding as needed */
-  background-color: #000000;
-  position: absolute;
-  font-size: 14px;
-  color: rgb(255, 255, 255);
-  margin: 0; 
-  left: 0; 
-  right: 0; 
-}
-.footer2 p{
-  color: #aaaaaa;
-}
-
-
+/*--=======================================================*/
 @media (max-width: 768px) {
- 
   .carousel {
     width: 280px;
     height: 280px;
   }
 }
+/*=======================================================*/
+/*FOOTER*/
+.footer {
+  background-color: black;
+  color: white;
+  padding: 12px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.footer.reveal .footer-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 50%,
+    transparent 100%
+  );
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.logo a {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.logo span {
+  color: red;
+}
+
+.copyright {
+  font-size: 15px;
+  color: grey;
+}
+/*=======================================================*/
