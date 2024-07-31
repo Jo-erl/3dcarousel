@@ -65,7 +65,7 @@ p {
   transform-style: preserve-3d;
   animation: rotate360 20s infinite linear;
 }
-
+/*--=======================================================*/
 @keyframes rotate360 {
   from {
     transform: rotateY(0deg);
@@ -196,7 +196,7 @@ p {
   position: relative;
   overflow: hidden;
 }
-
+/*--=======================================================*/
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -205,12 +205,12 @@ p {
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
+/*--=======================================================*/
 .footer.reveal .footer-content {
   opacity: 1;
   transform: translateY(0);
 }
-
+/*--=======================================================*/
 .footer::before {
   content: "";
   position: absolute;
@@ -227,12 +227,12 @@ p {
   transform: rotate(45deg);
   z-index: 1;
 }
-
+/*--=======================================================*/
 .footer-content {
   position: relative;
   z-index: 2;
 }
-
+/*--=======================================================*/
 .logo a {
   font-size: 32px;
   font-weight: bold;
@@ -241,11 +241,11 @@ p {
   margin-bottom: 16px;
   display: inline-block;
 }
-
+/*--=======================================================*/
 .logo span {
   color: red;
 }
-
+/*--=======================================================*/
 .copyright {
   font-size: 15px;
   color: grey;
